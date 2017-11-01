@@ -1,0 +1,44 @@
+.form-group.is-focused label.inputsuccess {
+    color: #01BC8C!important;
+}
+
+.form-group.has-success label.control-label {
+    color: #01BC8C !important;
+}
+
+.has-success .form-control:focus {
+    border-color: #01BC8C !important;
+}
+
+.form-group.is-focused label.inputwarning {
+    color: #f89a14!important;
+}
+
+.form-group.has-warning label.control-label {
+    color: #f89a14!important;
+}
+
+.has-warning .form-control:focus {
+    border-color: #f89a14 !important;
+}
+
+.form-group.is-focused label.inputerror {
+    color: #ef6f6c!important;
+}
+
+.form-group.has-error label.control-label {
+    color: #ef6f6c !important;
+}
+
+.has-error .form-control:focus {
+    border-color: #ef6f6c !important;
+}
+
+.fileinput-new .btn-primary span {
+    cursor: pointer!important;
+}
+
+.thumbnail {
+    width: 200px;
+    height: 150px;
+}

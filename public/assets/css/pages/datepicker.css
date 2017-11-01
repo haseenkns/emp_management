@@ -1,0 +1,15 @@
+    .btn:not(.btn-raised).btn-flat {
+        color: #777 !important;
+    }
+    
+    .date_pick {
+        font-size: 18px;
+    }
+    
+    .events {
+        font-size: 14px;
+    }
+    
+    .event_date {
+        margin-top: 10px;
+    }
