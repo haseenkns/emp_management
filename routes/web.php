@@ -22,4 +22,5 @@ Route::get('/login', function () {
 
 Route::post('doLogin','AuthController@login')->name('login');
 Route::get('dashboard','HomeController@dashboard')->name('dashboard');
+Route::get('roles','HomeController@showRoles')->name('showRoles');
 });

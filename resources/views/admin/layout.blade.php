@@ -242,8 +242,8 @@
                         </a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="form_examples.html">
-                                    <i class="material-icons">keyboard_arrow_right</i> Form Examples
+                                <a href="{{URL('admin/roles')}}">
+                                    <i class="material-icons">keyboard_arrow_right</i> Create Roles
                                 </a>
                             </li>
                             <li>
