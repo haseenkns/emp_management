@@ -14,7 +14,12 @@
 Route::get('/', function () {
     return view('admin.login');
 });
-//Route::group([]);
+Route::group(['prefix'=>'admin'],function(){
+
 Route::get('/login', function () {
     return view('login');
+});
+
+Route::post('doLogin','AuthController@login')->name('login');
+Route::get('dashboard','HomeController@dashboard')->name('dashboard');
 });
