@@ -53,7 +53,6 @@
                                                             <button type="submit" class="btn btn-raised btn-primary">
                                                                 Submit
                                                             </button>
-
                                                             &nbsp;
                                                             <input type="reset" class="btn btn-raised btn-default hidden-xs reset_btn3" value="Reset">
                                                         </div>

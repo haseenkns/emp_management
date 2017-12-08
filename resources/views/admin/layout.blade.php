@@ -26,7 +26,8 @@
 <body class="skin-josh">
 <header class="header">
     <a href="index-2.html" class="logo">
-        <img src="{{asset('assets/img/logo.png')}}" alt="Logo">
+        {{--<img src="{{asset('assets/img/logo.png')}}" alt="Logo">--}}
+        SMS
     </a>
     <nav class="navbar navbar-static-top" role="navigation">
         <!-- Sidebar toggle button-->
@@ -201,7 +202,7 @@
                                 </a>
                             </div>
                             <div class="pull-right">
-                                <a href="login.html">
+                                <a href="{{URL('admin/logout')}}">
                                     <i class="material-icons">exit_to_app</i> Logout
                                 </a>
                             </div>
@@ -233,6 +234,27 @@
                             <span class="title">Dashboard</span>
                         </a>
                     </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="material-icons text-info leftsize">assignment</i>
+                            <span class="title">Branch Management</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="{{URL('admin/branch')}}">
+                                    <i class="material-icons">keyboard_arrow_right</i>Add Branch
+                                </a>
+                            </li>
+                            <li>
+                                <a href="form_editor.html">
+                                    <i class="material-icons">keyboard_arrow_right</i> Form Editors
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
                     <!-- <li>                             <a href="#">                                 <i class="material-icons text-success leftsize">developer_board</i>                                 <span class="title">Builders</span>                                 <span class="fa arrow"></span>                             </a>                             <ul class="sub-menu">                                 <li>                                     <a href="form_builder.html">                                         <i class="material-icons">keyboard_arrow_right</i> Form Builder                                     </a>                                 </li>                                 <li>                                     <a href="form_builder2.html">                                         <i class="material-icons">keyboard_arrow_right</i> Form Builder 2                                     </a>                                 </li>                                 <li>                                     <a href="buttonbuilder.html">                                         <i class="material-icons">keyboard_arrow_right</i> Button Builder                                     </a>                                 </li>                                 <li>                                     <a href="page_builder.html">                                         <i class="material-icons">keyboard_arrow_right</i> Page Builder                                     </a>                                 </li>                             </ul>                         </li>-->
                     <li>
                         <a href="#">
