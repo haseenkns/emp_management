@@ -14,7 +14,17 @@
 Route::get('/', function () {
     return view('admin.login');
 });
-//Route::group([]);
+Route::group(['prefix'=>'admin'],function(){
+
 Route::get('/login', function () {
     return view('login');
+});
+Route::post('doLogin','AuthController@login')->name('login');
+
+Route::group(['middleware'=>'auth'],function(){
+Route::get('dashboard','HomeController@dashboard')->name('dashboard');
+Route::get('roles','HomeController@showRoles')->name('showRoles');
+Route::get('logout','AuthController@logout')->name('logout');
+Route::get('branch','HomeController@showBranch');
+});
 });

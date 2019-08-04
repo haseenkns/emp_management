@@ -16,16 +16,21 @@
     <div class="row vertical-offset-100">
         <div class="col-sm-6 col-sm-offset-3  col-md-5 col-md-offset-4 col-lg-4 col-lg-offset-4">
             <div id="container_demo">
+
                 <a class="hiddenanchor" id="toregister"></a>
                 <a class="hiddenanchor" id="tologin"></a>
                 <a class="hiddenanchor" id="toforgot"></a>
                 <div id="wrapper">
+
                     <div id="login" class="animate form">
                         {{--<form action="http://joshmaterial.lorvent.in/index.html" id="authentication" autocomplete="on" method="post">--}}
-                        {{Form::open(['url'=>'doLogin','method'=>'post'])}}
+                        {{Form::open(['url'=>'admin/doLogin','method'=>'post'])}}
                             <h3 class="black_bg">
-                                <img src="img/logo.png" alt="josh logo">
+
                                 <br>LOG IN</h3>
+                        @if(count($errors)>0)
+                            hello
+                        @endif
                             <div class="form-group label-floating">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="material-icons">email</i></span>
@@ -40,7 +45,7 @@
                                     <span class="input-group-addon"><i class="material-icons">vpn_key</i></span>
                                     {{--<label for="password1" class="youpasswd control-label">Password</label>--}}
                                     {{Form::label('password1','Password',['class'=>'youpasswd control-label'])}}
-                                    {{Form::password('password',['class'=>'form-control','required'=>'true','id'=>'password1'])}}
+                                    {{Form::password('password',['class'=>'form-control','id'=>'password1'])}}
                                     {{--<input id="password1" name="password" required type="password" class="form-control" />--}}
                                 </div>
                             </div>
